@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_muqin_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_muqin_up.ogg \
     vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_yingyan_down.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_yingyan_down.ogg \
     vendor/xiaomi/davinci/proprietary/media/audio/ui/popup_yingyan_up.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/popup_yingyan_up.ogg \
+    vendor/xiaomi/davinci/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/xiaomi/davinci/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.motor@1.0-service \
     vendor/xiaomi/davinci/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service \
     vendor/xiaomi/davinci/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
@@ -110,30 +111,39 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
     vendor/xiaomi/davinci/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/davinci/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/a615_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b00 \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/a615_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b01 \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/a615_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b02 \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/a615_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.elf \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/a615_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.mdt \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/a618_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a618_gmu.bin \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
     vendor/xiaomi/davinci/proprietary/vendor/firmware/goodix_gt9886_limit_f10_first.tporder:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_gt9886_limit_f10_first.tporder \
     vendor/xiaomi/davinci/proprietary/vendor/firmware/goodix_gt9886_limit_f10_second.tporder:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_gt9886_limit_f10_second.tporder \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03 \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/xiaomi/davinci/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/xiaomi/davinci/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensor.imx582_davinci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx582_davinci.so \
-    vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensor.imx586_davinci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx586_davinci.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensor.ov8856_davinci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov8856_davinci.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensor.s5k3l6_davinci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k3l6_davinci.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensor.s5k3t2_davinci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k3t2_davinci.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensormodule.davinci_luxvisions_imx582.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.davinci_luxvisions_imx582.bin \
-    vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensormodule.davinci_luxvisions_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.davinci_luxvisions_imx586.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensormodule.davinci_luxvisions_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.davinci_luxvisions_ov8856.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensormodule.davinci_luxvisions_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.davinci_luxvisions_s5k3l6.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensormodule.davinci_ofilm_imx582.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.davinci_ofilm_imx582.bin \
-    vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensormodule.davinci_ofilm_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.davinci_ofilm_imx586.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensormodule.davinci_ofilm_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.davinci_ofilm_ov8856.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensormodule.davinci_ofilm_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.davinci_ofilm_s5k3l6.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.sensormodule.davinci_sunny_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.davinci_sunny_s5k3t2.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.tuned.davinci_luxvisions_imx582.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.davinci_luxvisions_imx582.bin \
-    vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.tuned.davinci_luxvisions_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.davinci_luxvisions_imx586.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.tuned.davinci_luxvisions_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.davinci_luxvisions_ov8856.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.tuned.davinci_luxvisions_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.davinci_luxvisions_s5k3l6.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.tuned.davinci_ofilm_imx582.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.davinci_ofilm_imx582.bin \
-    vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.tuned.davinci_ofilm_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.davinci_ofilm_imx586.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.tuned.davinci_ofilm_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.davinci_ofilm_ov8856.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.tuned.davinci_ofilm_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.davinci_ofilm_s5k3l6.bin \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/com.qti.tuned.davinci_sunny_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.davinci_sunny_s5k3t2.bin \
@@ -196,7 +206,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/components/com.xiaomi.node.mifragment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.mifragment.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/components/com.xiaomi.node.misegment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.misegment.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/morpho_lowlight4.0.xml \
-    vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/components/etc/visidon_clearshot_params.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/visidon_clearshot_params.xml \
